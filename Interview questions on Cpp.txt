@@ -1,0 +1,191 @@
+/*
+    Date: 27-02-2026            Time: Around 12:15 PM           Index: 000002
+
+                                Topic: "Interview questions on C++"
+    ----------------------------------------------------------------------------
+Introduction
+The different typical interview processes
+The Big Tech style interview process
+The shorter interview process
+--
+
+auto and type deduction
+Question 1: Explain auto type deduction!
+Question 2: When can auto deduce undesired types?
+Question 3: What are the advantages of using auto?
+Question 4: What is the type of myCollection after the following declaration?
+Question 5: What are trailing return types?
+Question 6: Explain decltype!
+Question 7: When to use decltype(auto)?
+Question 8: Which data type do you get when you add two bools?
+
+The keyword static and its different usages
+Question 9: What does a static member variable in C++ mean?
+Question 10: What does a static member function mean in C++?
+Question 11: What is the static initialization order fiasco?
+Question 12: How to solve the static initialization order fiasco?
+
+Polymorphism, inheritance and virtual functions
+Question 13: What is the difference between function overloading and function overriding?
+Question 14: What is a virtual function?
+Question 15: What is the override keyword and what are its advantages?
+Question 16: Explain the concept of covariant return types and show a use-case where it comes in handy!
+Question 17: What is virtual inheritance in C++ and when should you use it?
+Question 18: Should we always use virtual inheritance? If yes, why? If not, why not?
+Question 19: What’s the output of the following sample program? Is that what you’d expect? Why? Why not?
+Question 20: Can you access the public and protected members and functions of a base class if you have private inheritance?
+Question 21: What is private inheritance used for?
+Question 22: Can you call a virtual function from a constructor or a destructor?
+Question 23: What role does a virtual destructor play?
+Question 24: Can we inherit from a standard container (such as std::vector)? If so what are the implications?
+Question 25: What does a strong type mean and what advantages does it have?
+Question 26: Explain short-circuit evaluation
+Question 27: What is a destructor and how can we overload it?
+Question 28: What is the output of the following piece of code and why?
+Question 29: How to use the = delete specifier in C++?
+
+Lambda functions
+Question 30: What are immediately invoked lambda functions?
+Question 31: What kind of captures are available for lambda expressions?
+
+How to use the const qualifier in C++
+Question 32: What is the output of the following piece of code and why?
+Question 33: What are the advantages of using const local variables?
+Question 34: Is it a good idea to have const members in a class?
+Question 35: Does it make sense to return const objects by value?
+Question 36: How should you return const pointers from a function?
+Question 37: Should functions return const references?
+Question 38: Should you take plain old data types by const reference as a function parameter?
+Question 39: Should you pass objects by const reference as a function parameter?
+Question 40: Does the signature of a function declaration has to match the signature of the function definition?
+Question 41: Explain what consteval and constinit bring to C++?
+
+Some best practices in modern C++
+Question 42: What is aggregate initialization?
+Question 43: What are explicit constructors and what are their advantages?
+Question 44: What are user-defined literals?
+Question 45: Why should we use nullptr instead of NULL or 0?
+Question 46: What advantages does alias have over typedef?
+Question 47: What are the advantages of scoped enums over unscoped enums?
+Question 48: Should you explicitly delete unused/unsupported special functions or declare them as private?
+Question 49: How to use the = delete specifier in C++?
+Question 50: What is a trivial class in C++?
+
+Smart pointers
+Question 51: Explain the Resource acquisition is initialization (RAII) idiom
+Question 52: When should we use unique pointers?
+Question 53: What are the reasons to use shared pointers?
+Question 54: When to use a weak pointer?
+Question 55: What are the advantages of std::make_shared and std::make_unique compared to the new operator?
+Question 56: Should you use smart pointers over raw pointers all the time?
+Question 57: When and why should we initialize pointers to nullptr?
+
+References, universal references, a bit of a mixture
+Question 58: What does std::move move?
+Question 59: What does std::forward forward?
+Question 60: What is the difference between universal and rvalue references?
+Question 61: What is reference collapsing?
+Question 62: When constexpr functions are evaluated?
+Question 63: When should you declare your functions as noexcept?
+
+C++20
+Question 64: What are concepts in C++?
+Question 65: What are the available standard attributes in C++?
+Question 66: What is 3-way comparison?
+Question 67: Explain what consteval and constinit bring to C++?
+Question 68: What are modules and what advantages do they bring?
+
+Special function and the rules of how many?
+Question 69: Explain the rule of three
+Question 70: Explain the rule of five
+Question 71: Explain the rule of zero
+Question 72: What does std::move move?
+Question 73: What is a destructor and how can we overload it?
+Question 74: Should you explicitly delete unused/unsupported special functions or declare them as private?
+Question 75: What is a trivial class in C++?
+Question 76: What advantages does having a default constructor have?
+
+Object oriented design, inheritance, polymorphism
+Question 77: What are the differences between a class and a struct?
+Question 78: What is constructor delegation?
+Question 79: Explain the concept of covariant return types and show a use-case where it comes in handy!
+Question 80: What is the difference between function overloading and function overriding?
+Question 81: What is the override keyword and what are its advantages?
+Question 82: Explain what is a friend class or a friend function
+Question 83: What are default arguments? How are they evaluated in a C++ function?
+Question 84: What is this pointer and can we delete it?
+Question 85: What is virtual inheritance in C++ and when should you use it?
+Question 86: Should we always use virtual inheritance? If yes, why? If not, why not?
+Question 87: What does a strong type mean and what advantages does it have?
+Question 88: What are user-defined literals?
+Question 89: Why shouldn’t we use boolean arguments?
+Question 90: Distinguish between shallow copy and deep copy
+Question 91: Are class functions taken into consideration as part of the object size?
+Question 92: What does dynamic dispatch mean?
+Question 93: What are vtable and vpointer?
+Question 94: Should base class destructors be virtual?
+Question 95: What is an abstract class in C++?
+Question 96: Is it possible to have polymorphic behaviour without the cost of virtual functions?
+Question 97: How would you add functionality to your classes with the Curiously Recurring Template Pattern (CRTP)?
+Question 98: What are the good reasons to use init() functions to initialize an object?
+
+Observable behaviours
+Question 99: What is observable behaviour of code?
+Question 100: What are the characteristics of an ill-formed C++ program?
+Question 101: What is unspecified behaviour?
+Question 102: What is implementation-defined behaviour?
+Question 103: What is undefined behaviour in C++?
+Question 104: What are the reasons behind undefined behaviour’s existence?
+Question 105: What approaches to take to avoid undefined behaviour?
+Question 106: What is iterator invalidation? Give a few examples.
+
+The Standard Template Library
+Question 107: What is the STL?
+Question 108: What are the advantages of algorithms over raw loops?
+Question 109: Do algorithms validate ranges?
+Question 110: Can you combine containers of different sizes?
+Question 111: How is a vector’s memory layout organized?
+Question 112: Can we inherit from a standard container (such as std::vector)? If so what are the implications?
+Question 113: What is the type of myCollection after the following declaration?
+Question 114: What are the advantages of const_iterators over iterators?
+Question 115: Binary search an element with algorithms!
+Question 116: What is an Iterator class?
+
+Miscalleanous
+Question 117: Can you call a virtual function from a constructor or a destructor?
+Question 118: What are default arguments? How are they evaluated in a C++ function?
+Question 119: Can virtual functions have default arguments?
+Question 120: Should base class destructors be virtual?
+Question 121: What is the function of the keyword mutable?
+Question 122: What is the function of the keyword volatile?
+Question 123: What is an inline function?
+Question 124: What do we catch?
+Question 125: What are the differences between references and pointers?
+Question 126: Which of the following variable declarations compile and what would be the value of a?
+Question 127: What will the line of code below print out and why?
+Question 128: Explain the difference between pre- and post-increment/decrement operators
+Question 129: What are the final values of a, b and c?
+Question 130: Does this string declaration compile?
+Question 131: What are Default Member Initializers in C++?
+Question 132: What is the most vexing parse?
+Question 133: Does this code compile? If yes, what does it do? If not, why not?
+Question 134: What is std::string_view and why should we use it?
+Question 135: How to check if a string starts or ends with a certain substring?
+Question 136: What is RVO?
+Question 137: How can we ensure the compiler performs RVO?
+Question 138: What are the primary and mixed value categories in C++?
+Question 139: Can you safely compare signed and unsigned integers?
+Question 140: What is the return value of main and what are the available signatures?
+Question 141: Should you prefer default arguments or overloading?
+Question 142: How many variables should you declare on a line?
+Question 143: Should you prefer a switch statement or chained if statements?
+Question 144: What are include guards?
+Question 145: Should you use angle brackets(<filename>) or double quotes(“filename”) to include?
+Question 146: How many return statements should you have in a function?
+
+C++ and algorithmic complexities
+Question 147: Explain the differences between a std::map and a std::unordered_map!
+Question 148: When to use a list over a vector?
+Question 149: What are the algorithmic complexities of the most important algorithms?
+
+*/
